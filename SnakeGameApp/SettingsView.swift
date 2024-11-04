@@ -27,9 +27,9 @@ struct SettingsView: View {
 			HStack {
 				Text("Speed: ")
 				Picker("", selection: $timerInterval) {
-					Text("Slow").tag(Double(0.5))
-					Text("Medium").tag(Double(0.3))
-					Text("Fast").tag(Double(0.1))
+					Text("Slow").tag(Double(0.6))
+					Text("Medium").tag(Double(0.4))
+					Text("Fast").tag(Double(0.2))
 				}
 				.pickerStyle(.segmented)
 			}

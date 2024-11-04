@@ -24,9 +24,9 @@ struct ContentView: View {
 			.padding()
 			
 			Rectangle()
-				.fill(Color.white)
+				.fill(Color(.quaternarySystemFill))
 				.frame(width: viewModel.mapSize, height: viewModel.mapSize)
-				.border(Color.black, width: 0.5)
+				.border(Color.gray, width: 0.5)
 				.overlay {
 					drawGrid()
 					ForEach(viewModel.snakeBody.indices, id: \.self) { index in
@@ -60,6 +60,7 @@ struct ContentView: View {
 			}
 		}
 		.sheet(isPresented: $showSettings, onDismiss: {
+			viewModel.restartGame()
 			viewModel.resumeGame()
 		}) {
 			SettingsView(cellSize: $viewModel.cellSize, timerInterval: $viewModel.timerInterval)
@@ -67,6 +68,7 @@ struct ContentView: View {
 					viewModel.pauseGame()
 				}
 		}
+		.background(Color(.secondarySystemBackground))
 	}
 	
 	private func drawGrid() -> some View {
@@ -80,7 +82,7 @@ struct ContentView: View {
 				path.addLine(to: CGPoint(x: viewModel.mapSize, y: y))
 			}
 		}
-		.stroke(Color.gray.opacity(0.5), lineWidth: 0.5)
+		.stroke(Color.gray.opacity(0.8), lineWidth: 0.5)
 	}
 }
 

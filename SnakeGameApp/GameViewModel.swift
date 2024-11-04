@@ -39,7 +39,7 @@ class GameViewModel: ObservableObject {
 	@Published var direction: Direction = .right
 	@Published var alertType: AlertType? = nil
 	@Published var cellSize: CGFloat = 60.0
-	@Published var timerInterval: Double = 0.3
+	@Published var timerInterval: Double = 0.4
 	
 	var mapSize: CGFloat {
 		let screenSize = UIScreen.main.bounds.width - 30

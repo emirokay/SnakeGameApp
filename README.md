@@ -38,7 +38,7 @@ The Snake Game App is a SwiftUI implementation of the classic Snake game, featur
 	cd SnakeGameApp
 3. Open in Xcode:
 	```bash
-	open SnakeGameApp.git.xcodeproj
+	open SnakeGameApp.xcodeproj
 4. Build and Run:
 - Select a simulator or connect a physical device.
 - Click the 'Run' button in Xcode to build and launch the app.

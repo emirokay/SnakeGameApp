@@ -47,7 +47,7 @@ The Snake Game App is a SwiftUI implementation of the classic Snake game, featur
 - Xcode: Version 12.0 or higher
 - iOS: Deployment target of iOS 14.0 or higher
 
-## Contributing
+## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your proposed changes.
 
 ## License

@@ -1,6 +1,9 @@
 # SnakeGameApp
 The Snake Game App is a SwiftUI implementation of the classic Snake game, featuring a clean interface with both light and dark mode support. Built using the Model-View-ViewModel (MVVM) architecture, it ensures code organization and maintainability, while leveraging SwiftUI and Combine for a smooth gameplay experience.
 
+## Screen Recording
+https://github.com/user-attachments/assets/4f4de431-0a2f-4978-9859-51b3a694741c
+
 ## Features
 - **Classic Gameplay**: Navigate the snake to consume food, growing in length with each bite.
 - **Score Count**: Tracks and displays the player's score during gameplay.
